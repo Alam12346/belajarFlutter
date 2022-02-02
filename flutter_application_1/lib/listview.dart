@@ -13,10 +13,14 @@ class listviewWidget extends StatelessWidget {
             ),
             body: ListView(children: <Widget>[
               Container(
-                padding: EdgeInsets.all(15),
-                child: Text('Flutter Widget: Penggunaan ListView Class',
-                    style:
-                        TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+                height: 300,
+                width: 300,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  image: DecorationImage(
+                      image: NetworkImage('assets/images/admin.png'),
+                      fit: BoxFit.cover),
+                ),
               ),
               Container(
                 padding: EdgeInsets.all(15),
